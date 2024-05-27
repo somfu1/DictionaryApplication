@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="614.0" prefWidth="867.0" style="-fx-background-color: lightblue;" styleClass="root" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.DicController">
+   <children>
+      <Button fx:id="homeButton" layoutX="14.0" layoutY="16.0" mnemonicParsing="false" prefHeight="282.0" prefWidth="46.0" style="-fx-background-color: darkblue;">
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utils/Icons/home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip fx:id="tooltip6" text="Trang chủ" />
+         </tooltip>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <AnchorPane fx:id="container" layoutX="72.0" layoutY="14.0" prefHeight="587.0" prefWidth="781.0">
+         <children>
+              <ImageView fx:id="home" accessibleRole="PARENT" fitHeight="584.0" fitWidth="790.0" layoutX="-1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Utils/Images/DUCK.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+              </ImageView>
+            <Button fx:id="transButton" ellipsisString="" layoutX="66.0" layoutY="328.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="304.0" style="-fx-background-color: #ccf;" text="Dịch ngôn ngữ" textFill="#25348a">
+               <tooltip>
+                  <Tooltip fx:id="tooltip4" text="Dịch nghĩa" />
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Cambria Italic" size="23.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="gameButton" layoutX="418.0" layoutY="441.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="304.0" style="-fx-background-color: #ccf;" text="Game từ vựng" textFill="#25348a">
+               <tooltip>
+                  <Tooltip fx:id="tooltip5" text="Trắc nghiệm" />
+               </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Cambria Italic" size="23.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+              <Button fx:id="addButton" alignment="CENTER" layoutX="66.0" layoutY="443.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="304.0" style="-fx-background-color: #ccf;" text="Thêm từ" textFill="#25348a">
+                  <tooltip>
+                      <Tooltip fx:id="tooltip3" text="Thêm từ" />
+                  </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Cambria Italic" size="23.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+              </Button>
+              <Button fx:id="searchButton" contentDisplay="CENTER" layoutX="418.0" layoutY="328.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="304.0" style="-fx-background-color: #ccf;" text="Tìm kiếm từ" textFill="#25348a">
+                  <font>
+                      <Font name="Cambria Italic" size="23.0" />
+                  </font>
+                  <tooltip>
+                      <Tooltip fx:id="tooltip2" text="Tra từ" />
+                  </tooltip>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+              </Button>
+            <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="77.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utils/Icons/405239706_1601011133765346_3402005213324257847_n_preview_rev_1.png" />
+               </image>
+            </ImageView>
+                <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="429.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Utils/Icons/icons8-magnifying-glass-100.png" />
+                    </image>
+                </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="32.0" layoutX="435.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utils/Icons/game.png" />
+               </image>
+            </ImageView>
+                <ImageView fitHeight="35.0" fitWidth="46.0" layoutX="80.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Utils/Icons/add.png" />
+                    </image>
+                </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="exitButton" alignment="BASELINE_LEFT" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="318.0" mnemonicParsing="false" prefHeight="282.0" prefWidth="46.0" style="-fx-background-color: darkblue;">
+         <tooltip>
+            <Tooltip fx:id="tooltip1" text="Thoát" />
+         </tooltip>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Utils/Icons/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
